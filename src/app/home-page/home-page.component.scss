@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f0f0f0;
+}
+
+body {
+  color: #999;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  min-width: 250px;
+}
+
+.btn {
+  background-color: #2a2b3c;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #f0f0f0;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn:hover{
+  background-color: #4e4f6d;
+  border: 2px solid rgb(159, 50, 50);
+}
+
+.btn a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn a:hover{
+  font-weight: 600;
+}
+
+.btn--block {
+  display: block;
+  width: 50%;
+  margin-top: 45px;
+}
+
+.cards {
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+.cards__item {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.content {
+  padding: 1rem;
+  box-sizing: border-box;
+  flex: 2;
+}
+
+.image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.card__title {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width:600px){
+    .card{
+      display: flex;
+    }
+}
+@media (max-width:600px){
+  .image{
+    margin: 10px;
+    border: 2px solid #999;
+  }
+  .content{
+    margin-bottom: 10px;
+  }
+}
+
+#main{
+    float: left;
+    width: 80%;
+}
+#sidebar{
+    float: right;
+    width: 20%;
+    padding-left: 15px;
+
+}
+
+#sidebar h1{
+    color: #000;
+    margin-bottom: 50px;
+}
+
+#sidebar ul{
+    list-style-position: inside;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+#sidebar li a{
+    color: rgb(220, 22, 38);
+    line-height: 2.5rem;
+}
+#sidebar a {
+  text-decoration: none;
+}
+
+@media (max-width:800px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        display: none;
+    }
+}

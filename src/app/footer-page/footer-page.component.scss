@@ -1,0 +1,98 @@
+
+section p{
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: #2d2b2b;
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 20px;
+  
+  }
+  
+  section .icons{
+    height: auto;
+    width: 100%;
+    margin: 0 10px 0 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  
+  .icons .bi {
+    color: #131212;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  footer{
+    height: auto;
+    width: 100%;
+    background-color: #141525;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  footer .logo-main{
+    color: rgb(39, 36, 30);
+    background-color: aliceblue;
+  }
+  
+  footer .logo{
+    color: rgb(201, 198, 121);
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  .ftr-links {
+    flex: 1;
+    text-align: center;
+  }
+  .ftr-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .ftr-links ul li a {
+    color: #f6bfbf;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  
+  .ftr-links ul li:hover{
+    background-color: #443f3f;
+    border-radius: 20px;
+  }
+  
+  
+  
+  footer p{
+    margin-top: 40px;
+    font-size: 14px;
+    color: #b6b6b6;
+  }
+  
+  @media (max-width:768px){
+   
+  
+    .ftr-links ul li{
+      padding: 15px;
+    }
+  
+    footer p{
+      font-size: 12px;
+    }
+  }
+  @media (min-width:768px){
+    .social-section{
+      .icons{
+        .bi{
+          padding: 0 10px 0 10px;
+        }
+        
+      }
+    } 
+  }
